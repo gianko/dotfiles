@@ -4,11 +4,10 @@ return {
 		-- Enable `lukas-reineke/indent-blankline.nvim`
 		-- See `:help ibl`
 		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
 		opts = {
 			scope = { enabled = true },
-			--show_current_context = true,
-			--show_current_context_start = false,
-			--  space_char_blankline = " ",
 		},
 	},
 }

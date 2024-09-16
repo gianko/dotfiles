@@ -5,11 +5,10 @@
 #: kitty has very powerful font management. You can configure
 #: individual font faces and even specify special fonts for particular
 #: characters.
-
-font_family      Cartograph CF Regular
-bold_font        Cartograph CF Bold
-italic_font      Cartograph CF Italic
-bold_italic_font Cartograph CF Bold Italic
+# font_family      VictorMono Nerd Font
+# bold_font        Cartograph CF Bold
+# italic_font      Cartograph CF Italic
+# bold_italic_font Cartograph CF Bold Italic
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. The easiest way to select fonts is to run the `kitten
@@ -1054,7 +1053,7 @@ font_size 17.0
 #: The horizontal alignment of the tab bar, can be one of: left,
 #: center, right.
 
-# tab_bar_min_tabs 2
+tab_bar_min_tabs 1
 
 #: The minimum number of tabs that must exist before the tab bar is
 #: shown.
@@ -1067,7 +1066,7 @@ font_size 17.0
 #: closed tab. A value of right will switch to the tab to the right of
 #: the closed tab. A value of last will switch to the right-most tab.
 
-# tab_fade 0.25 0.5 0.75 1
+tab_fade 0.75 1
 
 #: Control how each tab fades into the background when using fade for
 #: the tab_bar_style. Each number is an alpha (between zero and one)
@@ -2590,3 +2589,23 @@ shell  /opt/homebrew/bin/fish
 #: }}}
 
 #: }}}
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME
+
+map f1 combine : new_window_with_cwd : set_tab_title servers : first_window : new_window_with_cwd : first_window : new_tab_with_cwd : set_tab_title nvim
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="Menlo"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
+# modify_font underline_position 2
+# modify_font baseline -3
+
