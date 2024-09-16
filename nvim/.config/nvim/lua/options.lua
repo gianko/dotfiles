@@ -35,7 +35,7 @@ vim.opt.mouse = "a"
 vim.opt.mousehide = true
 
 vim.diagnostic.config({
-	virtual_text = false,
+	virtual_text = true,
 	-- float = {
 	-- header = false,
 	-- border = "rounded",
