@@ -200,7 +200,7 @@ return {
 				jsonls = {},
 
 				eslint = {
-					autostart = false,
+					autostart = true,
 					cmd = { "vscode-eslint-language-server", "--stdio", "--max-old-space-size=12288" },
 					settings = {
 						format = false,
@@ -237,6 +237,7 @@ return {
 			-- for you, so that they are available from within Neovim.
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
+				"eslint",
 				"ts_ls",
 				"tailwindcss",
 				"stylua", -- Used to format Lua code
