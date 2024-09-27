@@ -16,6 +16,8 @@ require("lazy").setup({
 	require("plugins.conform"),
 	require("plugins.saga"),
 	require("plugins.trouble"),
+	require("plugins.tsc"),
+	require("plugins.mini-ai"),
 }, {
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {

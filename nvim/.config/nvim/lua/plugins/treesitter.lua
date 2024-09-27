@@ -6,6 +6,9 @@ return {
 			ensure_installed = {
 				"bash",
 				"c",
+				"json",
+				"typescript",
+				"javascript",
 				"diff",
 				"html",
 				"lua",
