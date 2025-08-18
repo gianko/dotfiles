@@ -5,9 +5,9 @@ palette = "catppuccin_mocha"
 
 [character]
 # Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛](green) ❯](peach)"
-error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
+success_symbol = "[[👻](green) ❯](peach)"
+error_symbol = "[[👻](red) ❯](peach)"
+vimcmd_symbol = "[👻 ❮](subtext1)" # For use with zsh-vi-mode
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"

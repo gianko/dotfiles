@@ -1,0 +1,17 @@
+theme = catppuccin-mocha
+font-size = 17.0
+font-family = ""
+font-family = "Cartograph CF"
+font-family-bold = "Cartograph CF Bold"
+font-family-italic = "Cartograph CF Bold Italic"
+font-family-bold-italic = "Cartograph CF Bold Italic"
+split-divider-color = #585b70
+maximize = true
+window-save-state = always
+mouse-hide-while-typing = true
+
+# custom-shader = water.glsl
+# custom-shader = drunk.glsl
+
+keybind = super+d=new_split:down
+keybind = super+shift+d=new_split:right
