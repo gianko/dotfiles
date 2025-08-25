@@ -1,11 +1,11 @@
 theme = catppuccin-mocha
 font-size = 17.0
-font-family = ""
-font-family = "Cartograph CF"
-font-family-bold = "Cartograph CF Bold"
-font-family-italic = "Cartograph CF Bold Italic"
-font-family-bold-italic = "Cartograph CF Bold Italic"
+font-family = Cartograph CF
+font-style-bold = Bold
+font-style-italic = Bold Italic
+font-style-bold-italic = Bold Italic
 split-divider-color = #585b70
+
 maximize = true
 window-save-state = always
 mouse-hide-while-typing = true
