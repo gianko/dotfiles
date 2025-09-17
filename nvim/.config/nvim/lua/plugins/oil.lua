@@ -1,17 +1,22 @@
 return {
   {
-    'stevearc/oil.nvim',
+    "stevearc/oil.nvim",
     opts = {
       view_options = {
         show_hidden = true,
       },
     },
     dependencies = {
-      'nvim-tree/nvim-web-devicons'
+      "nvim-tree/nvim-web-devicons",
     },
     init = function()
-      vim.keymap.set("n", "<leader>ff", function() vim.cmd(":Oil --float") end)
-      vim.keymap.set("n", "<leader>fo", function() vim.cmd(":Oil --float .") end)
-    end
-  }
+      vim.keymap.set("n", "<leader>ff", function()
+        vim.cmd(":Oil --float")
+      end, { desc = "Open Oil (Root Dir)" })
+      vim.keymap.set("n", "<leader>fo", function()
+        vim.cmd(":Oil --float .")
+      end, { desc = "Open Oil (folder)" })
+    end,
+  },
 }
+

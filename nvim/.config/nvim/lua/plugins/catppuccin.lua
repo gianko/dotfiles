@@ -1,33 +1,27 @@
 return {
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		opts = {
-			flavour = "mocha",
-			integrations = {
-				cmp = true,
-				fidget = true,
-				gitsigns = true,
-				harpoon = true,
-				indent_blankline = {
-					enabled = true,
-					scope_color = "sapphire",
-					colored_indent_levels = false,
-				},
-				mason = true,
-				native_lsp = { enabled = true },
-				noice = true,
-				notify = true,
-				symbols_outline = true,
-				telescope = true,
-				treesitter = true,
-				treesitter_context = true,
-			},
-		},
-		config = true,
-		init = function()
-			vim.cmd.colorscheme("catppuccin")
-		end,
-	},
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = true,
+    priority = 1000,
+    opts = {
+      flavour = "mocha",
+      auto_integrations = true,
+      integrations = {
+        telescope = {
+          enabled = true,
+        },
+        mini = {
+          enabled = true,
+          -- indentscope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+        },
+      },
+      custom_highlights = function(colors)
+        return {
+          WinSeparator = { fg = colors.flamingo },
+        }
+      end,
+    },
+    config = true,
+  },
 }
